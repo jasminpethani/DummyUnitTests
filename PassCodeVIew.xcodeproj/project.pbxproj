@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C26E1AC257AF3E5CAC2EB933 /* Pods_PassCodeVIew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2520F851C24E3A3691BA5705 /* Pods_PassCodeVIew.framework */; };
+		CB165C6820715A1000A96812 /* PassCodeVIewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB165C6720715A1000A96812 /* PassCodeVIewTests.swift */; };
+		CB292C2220655F5B001885A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB292C2120655F5B001885A8 /* AppDelegate.swift */; };
+		CB292C2420655F5B001885A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB292C2320655F5B001885A8 /* ViewController.swift */; };
+		CB292C2720655F5B001885A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB292C2520655F5B001885A8 /* Main.storyboard */; };
+		CB292C2920655F5B001885A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB292C2820655F5B001885A8 /* Assets.xcassets */; };
+		CB292C2C20655F5B001885A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB292C2A20655F5B001885A8 /* LaunchScreen.storyboard */; };
+		CB292C3420656158001885A8 /* PassCodeViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB292C3320656158001885A8 /* PassCodeViewContainer.swift */; };
+		CB292C362065616E001885A8 /* PassCodeViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB292C352065616E001885A8 /* PassCodeViewContainer.xib */; };
+		CB350607206A923700A541C2 /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB350606206A923700A541C2 /* CustomKeyboard.swift */; };
+		CB350609206A926B00A541C2 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB350608206A926B00A541C2 /* CustomKeyboard.xib */; };
+		CB69D58A2073EFBA002C6BA7 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69D5892073EFBA002C6BA7 /* RoundCornerButton.swift */; };
+		CB8AF2F52065834F00A4834C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8AF2F42065834F00A4834C /* AppConstants.swift */; };
+		CBB497A920751D5600AE2027 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497A820751D5600AE2027 /* ViewControllerTests.swift */; };
+		CBB497C120751E8500AE2027 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497C020751E8500AE2027 /* MockViewController.swift */; };
+		CBB497C220751F4600AE2027 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497AF20751D7E00AE2027 /* Action.swift */; };
+		CBB497C320751F4600AE2027 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B020751D7E00AE2027 /* Actionable.swift */; };
+		CBB497C420751F4600AE2027 /* ActionPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B120751D7E00AE2027 /* ActionPerformer.swift */; };
+		CBB497C520751F4600AE2027 /* AnyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B220751D7E00AE2027 /* AnyValue.swift */; };
+		CBB497C620751F4600AE2027 /* ArgumentMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B320751D7E00AE2027 /* ArgumentMatcher.swift */; };
+		CBB497C720751F4600AE2027 /* CallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B420751D7E00AE2027 /* CallHandler.swift */; };
+		CBB497C820751F4600AE2027 /* CallHandlerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B520751D7E00AE2027 /* CallHandlerImpl.swift */; };
+		CBB497C920751F4600AE2027 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B620751D7E00AE2027 /* Mock.swift */; };
+		CBB497CA20751F4600AE2027 /* MockFailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B720751D7E00AE2027 /* MockFailer.swift */; };
+		CBB497CB20751F4600AE2027 /* MockFailerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B820751D7E00AE2027 /* MockFailerImpl.swift */; };
+		CBB497CC20751F4600AE2027 /* MockMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497B920751D7E00AE2027 /* MockMatcher.swift */; };
+		CBB497CD20751F4600AE2027 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BA20751D7E00AE2027 /* State.swift */; };
+		CBB497CE20751F4600AE2027 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BB20751D7E00AE2027 /* StringConstants.swift */; };
+		CBB497CF20751F4600AE2027 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BC20751D7E00AE2027 /* Stub.swift */; };
+		CBB497D020751F4600AE2027 /* TypeMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BD20751D7E00AE2027 /* TypeMatcher.swift */; };
+		CBB497D120751F4600AE2027 /* VerificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BE20751D7E00AE2027 /* VerificationData.swift */; };
+		CBB497D220751F4600AE2027 /* VerificationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB497BF20751D7E00AE2027 /* VerificationMode.swift */; };
+		CBC09EB920657E79007AB3A1 /* PasscodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC09EB820657E79007AB3A1 /* PasscodeDelegate.swift */; };
+		CBC09EBC20657EC6007AB3A1 /* PasscodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC09EBB20657EC6007AB3A1 /* PasscodeType.swift */; };
+		CBE5623F206E987A00588B93 /* SmileLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE5623E206E987A00588B93 /* SmileLockViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB165C6A20715A1000A96812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB292C1620655F5B001885A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB292C1D20655F5B001885A8;
+			remoteInfo = PassCodeVIew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2520F851C24E3A3691BA5705 /* Pods_PassCodeVIew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassCodeVIew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03CB50D045C009515EFEDBD /* Pods-PassCodeVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassCodeVIew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassCodeVIew/Pods-PassCodeVIew.debug.xcconfig"; sourceTree = "<group>"; };
+		CB165C6520715A0F00A96812 /* PassCodeVIewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassCodeVIewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB165C6720715A1000A96812 /* PassCodeVIewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeVIewTests.swift; sourceTree = "<group>"; };
+		CB165C6920715A1000A96812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB292C1E20655F5B001885A8 /* PassCodeVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassCodeVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB292C2120655F5B001885A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB292C2320655F5B001885A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB292C2620655F5B001885A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB292C2820655F5B001885A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB292C2B20655F5B001885A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB292C2D20655F5B001885A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB292C3320656158001885A8 /* PassCodeViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeViewContainer.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		CB292C352065616E001885A8 /* PassCodeViewContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassCodeViewContainer.xib; sourceTree = "<group>"; };
+		CB350606206A923700A541C2 /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		CB350608206A926B00A541C2 /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
+		CB69D5892073EFBA002C6BA7 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		CB8AF2F42065834F00A4834C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		CBB497A820751D5600AE2027 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		CBB497AC20751D7E00AE2027 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		CBB497AE20751D7E00AE2027 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		CBB497AF20751D7E00AE2027 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		CBB497B020751D7E00AE2027 /* Actionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actionable.swift; sourceTree = "<group>"; };
+		CBB497B120751D7E00AE2027 /* ActionPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPerformer.swift; sourceTree = "<group>"; };
+		CBB497B220751D7E00AE2027 /* AnyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyValue.swift; sourceTree = "<group>"; };
+		CBB497B320751D7E00AE2027 /* ArgumentMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentMatcher.swift; sourceTree = "<group>"; };
+		CBB497B420751D7E00AE2027 /* CallHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHandler.swift; sourceTree = "<group>"; };
+		CBB497B520751D7E00AE2027 /* CallHandlerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHandlerImpl.swift; sourceTree = "<group>"; };
+		CBB497B620751D7E00AE2027 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		CBB497B720751D7E00AE2027 /* MockFailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailer.swift; sourceTree = "<group>"; };
+		CBB497B820751D7E00AE2027 /* MockFailerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailerImpl.swift; sourceTree = "<group>"; };
+		CBB497B920751D7E00AE2027 /* MockMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMatcher.swift; sourceTree = "<group>"; };
+		CBB497BA20751D7E00AE2027 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		CBB497BB20751D7E00AE2027 /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		CBB497BC20751D7E00AE2027 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		CBB497BD20751D7E00AE2027 /* TypeMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMatcher.swift; sourceTree = "<group>"; };
+		CBB497BE20751D7E00AE2027 /* VerificationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationData.swift; sourceTree = "<group>"; };
+		CBB497BF20751D7E00AE2027 /* VerificationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationMode.swift; sourceTree = "<group>"; };
+		CBB497C020751E8500AE2027 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		CBC09EB820657E79007AB3A1 /* PasscodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeDelegate.swift; sourceTree = "<group>"; };
+		CBC09EBB20657EC6007AB3A1 /* PasscodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeType.swift; sourceTree = "<group>"; };
+		CBE5623E206E987A00588B93 /* SmileLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileLockViewController.swift; sourceTree = "<group>"; };
+		E546B97C59CD7065F33801D6 /* Pods-PassCodeVIew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassCodeVIew.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassCodeVIew/Pods-PassCodeVIew.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB165C6220715A0F00A96812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB292C1B20655F5B001885A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26E1AC257AF3E5CAC2EB933 /* Pods_PassCodeVIew.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DA8C78B33643C0C9DCEF930 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A03CB50D045C009515EFEDBD /* Pods-PassCodeVIew.debug.xcconfig */,
+				E546B97C59CD7065F33801D6 /* Pods-PassCodeVIew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6CB4195FBF5B0E3625BA769 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2520F851C24E3A3691BA5705 /* Pods_PassCodeVIew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB165C6620715A1000A96812 /* PassCodeVIewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBB497AA20751D7E00AE2027 /* Mockit */,
+				CB165C6720715A1000A96812 /* PassCodeVIewTests.swift */,
+				CB165C6920715A1000A96812 /* Info.plist */,
+				CBB497A820751D5600AE2027 /* ViewControllerTests.swift */,
+				CBB497C020751E8500AE2027 /* MockViewController.swift */,
+			);
+			path = PassCodeVIewTests;
+			sourceTree = "<group>";
+		};
+		CB292C1520655F5B001885A8 = {
+			isa = PBXGroup;
+			children = (
+				CB292C2020655F5B001885A8 /* PassCodeVIew */,
+				CB165C6620715A1000A96812 /* PassCodeVIewTests */,
+				CB292C1F20655F5B001885A8 /* Products */,
+				4DA8C78B33643C0C9DCEF930 /* Pods */,
+				B6CB4195FBF5B0E3625BA769 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB292C1F20655F5B001885A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB292C1E20655F5B001885A8 /* PassCodeVIew.app */,
+				CB165C6520715A0F00A96812 /* PassCodeVIewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB292C2020655F5B001885A8 /* PassCodeVIew */ = {
+			isa = PBXGroup;
+			children = (
+				CBC09EB620657E3B007AB3A1 /* Utilities */,
+				CBC09EB320657AF5007AB3A1 /* Views */,
+				CBC09EB420657B09007AB3A1 /* Resources */,
+				CBC09EB220657AEA007AB3A1 /* Controllers */,
+			);
+			path = PassCodeVIew;
+			sourceTree = "<group>";
+		};
+		CBB497AA20751D7E00AE2027 /* Mockit */ = {
+			isa = PBXGroup;
+			children = (
+				CBB497AB20751D7E00AE2027 /* Assets */,
+				CBB497AD20751D7E00AE2027 /* Classes */,
+			);
+			path = Mockit;
+			sourceTree = "<group>";
+		};
+		CBB497AB20751D7E00AE2027 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CBB497AC20751D7E00AE2027 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CBB497AD20751D7E00AE2027 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CBB497AE20751D7E00AE2027 /* .gitkeep */,
+				CBB497AF20751D7E00AE2027 /* Action.swift */,
+				CBB497B020751D7E00AE2027 /* Actionable.swift */,
+				CBB497B120751D7E00AE2027 /* ActionPerformer.swift */,
+				CBB497B220751D7E00AE2027 /* AnyValue.swift */,
+				CBB497B320751D7E00AE2027 /* ArgumentMatcher.swift */,
+				CBB497B420751D7E00AE2027 /* CallHandler.swift */,
+				CBB497B520751D7E00AE2027 /* CallHandlerImpl.swift */,
+				CBB497B620751D7E00AE2027 /* Mock.swift */,
+				CBB497B720751D7E00AE2027 /* MockFailer.swift */,
+				CBB497B820751D7E00AE2027 /* MockFailerImpl.swift */,
+				CBB497B920751D7E00AE2027 /* MockMatcher.swift */,
+				CBB497BA20751D7E00AE2027 /* State.swift */,
+				CBB497BB20751D7E00AE2027 /* StringConstants.swift */,
+				CBB497BC20751D7E00AE2027 /* Stub.swift */,
+				CBB497BD20751D7E00AE2027 /* TypeMatcher.swift */,
+				CBB497BE20751D7E00AE2027 /* VerificationData.swift */,
+				CBB497BF20751D7E00AE2027 /* VerificationMode.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CBC09EB220657AEA007AB3A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB292C2320655F5B001885A8 /* ViewController.swift */,
+				CBE5623E206E987A00588B93 /* SmileLockViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CBC09EB320657AF5007AB3A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB292C3320656158001885A8 /* PassCodeViewContainer.swift */,
+				CB292C352065616E001885A8 /* PassCodeViewContainer.xib */,
+				CB350606206A923700A541C2 /* CustomKeyboard.swift */,
+				CB350608206A926B00A541C2 /* CustomKeyboard.xib */,
+				CB69D5892073EFBA002C6BA7 /* RoundCornerButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CBC09EB420657B09007AB3A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB292C2120655F5B001885A8 /* AppDelegate.swift */,
+				CBC09EB520657B2F007AB3A1 /* Storyboards */,
+				CB292C2820655F5B001885A8 /* Assets.xcassets */,
+				CB292C2D20655F5B001885A8 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CBC09EB520657B2F007AB3A1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CB292C2520655F5B001885A8 /* Main.storyboard */,
+				CB292C2A20655F5B001885A8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CBC09EB620657E3B007AB3A1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CBC09EBA20657EB2007AB3A1 /* Enums */,
+				CBC09EB720657E4B007AB3A1 /* Protocols */,
+				CB8AF2F42065834F00A4834C /* AppConstants.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CBC09EB720657E4B007AB3A1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CBC09EB820657E79007AB3A1 /* PasscodeDelegate.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		CBC09EBA20657EB2007AB3A1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CBC09EBB20657EC6007AB3A1 /* PasscodeType.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB165C6420715A0F00A96812 /* PassCodeVIewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB165C6E20715A1000A96812 /* Build configuration list for PBXNativeTarget "PassCodeVIewTests" */;
+			buildPhases = (
+				CB165C6120715A0F00A96812 /* Sources */,
+				CB165C6220715A0F00A96812 /* Frameworks */,
+				CB165C6320715A0F00A96812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB165C6B20715A1000A96812 /* PBXTargetDependency */,
+			);
+			name = PassCodeVIewTests;
+			productName = PassCodeVIewTests;
+			productReference = CB165C6520715A0F00A96812 /* PassCodeVIewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB292C1D20655F5B001885A8 /* PassCodeVIew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB292C3020655F5B001885A8 /* Build configuration list for PBXNativeTarget "PassCodeVIew" */;
+			buildPhases = (
+				A86824AE5C3CF6A80EF7AE3A /* [CP] Check Pods Manifest.lock */,
+				CB292C1A20655F5B001885A8 /* Sources */,
+				CB292C1B20655F5B001885A8 /* Frameworks */,
+				CB292C1C20655F5B001885A8 /* Resources */,
+				193880D0CACC46E778B782B2 /* [CP] Embed Pods Frameworks */,
+				B794EF1018AA66806D7FA57B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassCodeVIew;
+			productName = PassCodeVIew;
+			productReference = CB292C1E20655F5B001885A8 /* PassCodeVIew.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB292C1620655F5B001885A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = jasmin;
+				TargetAttributes = {
+					CB165C6420715A0F00A96812 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB292C1D20655F5B001885A8;
+					};
+					CB292C1D20655F5B001885A8 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CB292C1920655F5B001885A8 /* Build configuration list for PBXProject "PassCodeVIew" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB292C1520655F5B001885A8;
+			productRefGroup = CB292C1F20655F5B001885A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB292C1D20655F5B001885A8 /* PassCodeVIew */,
+				CB165C6420715A0F00A96812 /* PassCodeVIewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB165C6320715A0F00A96812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB292C1C20655F5B001885A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB292C2C20655F5B001885A8 /* LaunchScreen.storyboard in Resources */,
+				CB292C2920655F5B001885A8 /* Assets.xcassets in Resources */,
+				CB292C362065616E001885A8 /* PassCodeViewContainer.xib in Resources */,
+				CB292C2720655F5B001885A8 /* Main.storyboard in Resources */,
+				CB350609206A926B00A541C2 /* CustomKeyboard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193880D0CACC46E778B782B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PassCodeVIew/Pods-PassCodeVIew-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SmileLock/SmileLock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmileLock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassCodeVIew/Pods-PassCodeVIew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86824AE5C3CF6A80EF7AE3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassCodeVIew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B794EF1018AA66806D7FA57B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PassCodeVIew/Pods-PassCodeVIew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB165C6120715A0F00A96812 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB497C920751F4600AE2027 /* Mock.swift in Sources */,
+				CBB497D220751F4600AE2027 /* VerificationMode.swift in Sources */,
+				CBB497C820751F4600AE2027 /* CallHandlerImpl.swift in Sources */,
+				CBB497C420751F4600AE2027 /* ActionPerformer.swift in Sources */,
+				CBB497C720751F4600AE2027 /* CallHandler.swift in Sources */,
+				CBB497CE20751F4600AE2027 /* StringConstants.swift in Sources */,
+				CBB497C520751F4600AE2027 /* AnyValue.swift in Sources */,
+				CBB497C120751E8500AE2027 /* MockViewController.swift in Sources */,
+				CBB497C220751F4600AE2027 /* Action.swift in Sources */,
+				CBB497A920751D5600AE2027 /* ViewControllerTests.swift in Sources */,
+				CBB497CD20751F4600AE2027 /* State.swift in Sources */,
+				CBB497D020751F4600AE2027 /* TypeMatcher.swift in Sources */,
+				CBB497CC20751F4600AE2027 /* MockMatcher.swift in Sources */,
+				CBB497D120751F4600AE2027 /* VerificationData.swift in Sources */,
+				CBB497CA20751F4600AE2027 /* MockFailer.swift in Sources */,
+				CBB497CF20751F4600AE2027 /* Stub.swift in Sources */,
+				CB165C6820715A1000A96812 /* PassCodeVIewTests.swift in Sources */,
+				CBB497C320751F4600AE2027 /* Actionable.swift in Sources */,
+				CBB497CB20751F4600AE2027 /* MockFailerImpl.swift in Sources */,
+				CBB497C620751F4600AE2027 /* ArgumentMatcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB292C1A20655F5B001885A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB69D58A2073EFBA002C6BA7 /* RoundCornerButton.swift in Sources */,
+				CB292C3420656158001885A8 /* PassCodeViewContainer.swift in Sources */,
+				CB292C2420655F5B001885A8 /* ViewController.swift in Sources */,
+				CBE5623F206E987A00588B93 /* SmileLockViewController.swift in Sources */,
+				CBC09EBC20657EC6007AB3A1 /* PasscodeType.swift in Sources */,
+				CB350607206A923700A541C2 /* CustomKeyboard.swift in Sources */,
+				CB8AF2F52065834F00A4834C /* AppConstants.swift in Sources */,
+				CBC09EB920657E79007AB3A1 /* PasscodeDelegate.swift in Sources */,
+				CB292C2220655F5B001885A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB165C6B20715A1000A96812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB292C1D20655F5B001885A8 /* PassCodeVIew */;
+			targetProxy = CB165C6A20715A1000A96812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB292C2520655F5B001885A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB292C2620655F5B001885A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB292C2A20655F5B001885A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB292C2B20655F5B001885A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB165C6C20715A1000A96812 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassCodeVIewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jasminpethani.PassCodeVIewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassCodeVIew.app/PassCodeVIew";
+			};
+			name = Debug;
+		};
+		CB165C6D20715A1000A96812 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassCodeVIewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jasminpethani.PassCodeVIewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PassCodeVIew.app/PassCodeVIew";
+			};
+			name = Release;
+		};
+		CB292C2E20655F5B001885A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB292C2F20655F5B001885A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB292C3120655F5B001885A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03CB50D045C009515EFEDBD /* Pods-PassCodeVIew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassCodeVIew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jasminpethani.PassCodeVIew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB292C3220655F5B001885A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E546B97C59CD7065F33801D6 /* Pods-PassCodeVIew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PassCodeVIew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jasminpethani.PassCodeVIew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB165C6E20715A1000A96812 /* Build configuration list for PBXNativeTarget "PassCodeVIewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB165C6C20715A1000A96812 /* Debug */,
+				CB165C6D20715A1000A96812 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB292C1920655F5B001885A8 /* Build configuration list for PBXProject "PassCodeVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB292C2E20655F5B001885A8 /* Debug */,
+				CB292C2F20655F5B001885A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB292C3020655F5B001885A8 /* Build configuration list for PBXNativeTarget "PassCodeVIew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB292C3120655F5B001885A8 /* Debug */,
+				CB292C3220655F5B001885A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB292C1620655F5B001885A8 /* Project object */;
+}

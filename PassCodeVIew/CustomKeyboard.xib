@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomKeyboard" customModule="PassCodeVIew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="IB6-0g-SgM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lyj-wD-qkR">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4y-sy-Rop" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="1"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusButton">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Cu-4g-Lad"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ev-0c-vXZ" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="C3s-Cm-OOL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXn-k9-Q3U" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="ypt-FT-UTm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ew-1z-ij4">
+                            <rect key="frame" x="0.0" y="88" width="375" height="86.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-w4-3Qx" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jed-j8-XhD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmC-qI-ty1" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="DkS-sr-llf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f6-aI-euu" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="UYS-Ki-fhP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y02-YU-onQ">
+                            <rect key="frame" x="0.0" y="175.5" width="375" height="87"/>
+                            <subviews>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGj-aW-ySw" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="WZ6-dx-kN4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4u-0q-JYt" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="PzK-Zs-5Qp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B08-8Q-P1W" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="87"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="1db-cv-DJn"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="atH-Yd-ogy">
+                            <rect key="frame" x="0.0" y="263.5" width="375" height="86.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCZ-0p-59Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v49-Ou-f0y" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="numberBtns:" destination="iN0-l3-epB" eventType="touchUpInside" id="VK9-wM-qgi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIf-yn-ZE9" customClass="RoundCornerButton" customModule="PassCodeVIew" customModuleProvider="target">
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="86.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="23"/>
+                                    <state key="normal" title="D"/>
+                                    <connections>
+                                        <action selector="deleteButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="jFB-ba-P6g"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IB6-0g-SgM" secondAttribute="trailing" id="Ja6-hQ-AWm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IB6-0g-SgM" secondAttribute="bottom" id="mT2-e4-hz2"/>
+                <constraint firstItem="IB6-0g-SgM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tvs-Bh-OwE"/>
+                <constraint firstItem="IB6-0g-SgM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zOj-3P-hVt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-185" y="28"/>
+        </view>
+    </objects>
+</document>

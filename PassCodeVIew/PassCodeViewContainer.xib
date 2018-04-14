@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PassCodeViewContainer" customModule="PassCodeVIew" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9YF-PQ-X39">
+                    <rect key="frame" x="117.5" y="96" width="140" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-wb-w00">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-sx-XeF">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="Qmz-gz-yEx">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Qmz-gz-yEx" secondAttribute="height" multiplier="1:1" id="pTc-aB-a5H"/>
+                                        <constraint firstAttribute="width" constant="15" id="vkG-xl-Oas"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uPT-aK-WV3">
+                            <rect key="frame" x="25" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9v-Sq-NFm">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="cIj-Ev-UgD">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="Oqo-d2-wcQ"/>
+                                        <constraint firstAttribute="width" secondItem="cIj-Ev-UgD" secondAttribute="height" multiplier="1:1" id="u8X-bh-cnA"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="tx8-VW-qp4"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="are-Yl-Bup">
+                            <rect key="frame" x="50" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2LG-Pl-KRE">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="a8H-RF-i06">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="Pip-tJ-S4Y"/>
+                                        <constraint firstAttribute="width" secondItem="a8H-RF-i06" secondAttribute="height" multiplier="1:1" id="sT0-Jh-ECx"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="JwM-jo-Brf"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="b9z-YO-UQE">
+                            <rect key="frame" x="75" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bt7-5r-Ytd">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-Zl-x4t">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="6zu-X1-eHp"/>
+                                        <constraint firstAttribute="width" secondItem="7WN-Zl-x4t" secondAttribute="height" multiplier="1:1" id="HIG-Ce-DPS"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="gtO-a1-P02"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Sru-eh-fA0">
+                            <rect key="frame" x="100" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3U-yP-xk1">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="4TD-ud-rui">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="4TD-ud-rui" secondAttribute="height" multiplier="1:1" id="Oeq-QX-B8E"/>
+                                        <constraint firstAttribute="width" constant="15" id="tpa-6Y-Bam"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="Ztb-8l-SaQ"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-LH-jgV">
+                            <rect key="frame" x="125" y="0.0" width="15" height="50"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aIW-0C-6Dk">
+                                    <rect key="frame" x="0.0" y="0.0" width="15" height="35"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dash" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-7q-nf4">
+                                    <rect key="frame" x="0.0" y="35" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="rRV-Uz-3Gf"/>
+                                        <constraint firstAttribute="width" secondItem="ngd-7q-nf4" secondAttribute="height" multiplier="1:1" id="vsf-Kx-sO5"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="pNB-hJ-L7i"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5qw-KZ-vEo"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVi-Co-OcQ">
+                    <rect key="frame" x="147" y="246" width="80" height="30"/>
+                    <state key="normal" title="Skip Button"/>
+                    <connections>
+                        <action selector="skipButtonPressedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="amH-Xv-W4o"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etL-t1-k1x">
+                    <rect key="frame" x="164" y="8" width="46.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX0-pA-mLU">
+                    <rect key="frame" x="148.5" y="48" width="78.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+            <constraints>
+                <constraint firstItem="HVi-Co-OcQ" firstAttribute="top" secondItem="9YF-PQ-X39" secondAttribute="bottom" constant="100" id="0Uo-Ql-u6L"/>
+                <constraint firstItem="9YF-PQ-X39" firstAttribute="top" secondItem="yX0-pA-mLU" secondAttribute="bottom" constant="30" id="9tN-dE-Pc0"/>
+                <constraint firstItem="yX0-pA-mLU" firstAttribute="top" secondItem="etL-t1-k1x" secondAttribute="bottom" constant="10" id="Ai6-F9-Wjn"/>
+                <constraint firstItem="9YF-PQ-X39" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DZT-H5-zbV"/>
+                <constraint firstItem="HVi-Co-OcQ" firstAttribute="centerX" secondItem="9YF-PQ-X39" secondAttribute="centerX" id="EZ2-Ki-9PG"/>
+                <constraint firstItem="yX0-pA-mLU" firstAttribute="centerX" secondItem="etL-t1-k1x" secondAttribute="centerX" id="LXT-8o-ACY"/>
+                <constraint firstItem="etL-t1-k1x" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="PPD-40-pI0"/>
+                <constraint firstItem="etL-t1-k1x" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="cwg-tG-oVs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descLabel" destination="yX0-pA-mLU" id="wOb-dD-6Wz"/>
+                <outlet property="titleLabel" destination="etL-t1-k1x" id="PiD-hT-of6"/>
+                <outletCollection property="textFields" destination="aRo-sx-XeF" collectionClass="NSMutableArray" id="sYp-bY-xn3"/>
+                <outletCollection property="textFields" destination="v9v-Sq-NFm" collectionClass="NSMutableArray" id="QWI-v7-eiD"/>
+                <outletCollection property="textFields" destination="2LG-Pl-KRE" collectionClass="NSMutableArray" id="r3Q-PH-w0v"/>
+                <outletCollection property="textFields" destination="bt7-5r-Ytd" collectionClass="NSMutableArray" id="f0m-LP-mR3"/>
+                <outletCollection property="textFields" destination="B3U-yP-xk1" collectionClass="NSMutableArray" id="i1w-Yo-8gP"/>
+                <outletCollection property="textFields" destination="aIW-0C-6Dk" collectionClass="NSMutableArray" id="aCm-xg-KlH"/>
+                <outletCollection property="dashes" destination="Qmz-gz-yEx" collectionClass="NSMutableArray" id="yS8-bj-AR0"/>
+                <outletCollection property="dashes" destination="cIj-Ev-UgD" collectionClass="NSMutableArray" id="8Sa-kV-rma"/>
+                <outletCollection property="dashes" destination="a8H-RF-i06" collectionClass="NSMutableArray" id="hw2-rg-buf"/>
+                <outletCollection property="dashes" destination="7WN-Zl-x4t" collectionClass="NSMutableArray" id="Ncb-l0-J9i"/>
+                <outletCollection property="dashes" destination="4TD-ud-rui" collectionClass="NSMutableArray" id="aq3-7O-kN6"/>
+                <outletCollection property="dashes" destination="ngd-7q-nf4" collectionClass="NSMutableArray" id="ZLZ-kJ-Idq"/>
+            </connections>
+            <point key="canvasLocation" x="-386" y="-554"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dash" width="25" height="25"/>
+    </resources>
+</document>
