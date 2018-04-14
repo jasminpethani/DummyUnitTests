@@ -22,15 +22,6 @@ class ViewControllerTests: XCTestCase {
 		return stuNavController.topViewController as! ViewController
 	}
 	
-	class MockPasscodeViewContainer: PassCodeViewContainer {
-		convenience init() {
-			self.init(coder: NSCoder())!
-		}
-		
-		required init?(coder aDecoder: NSCoder) {
-			super.init(coder: aDecoder)
-		}
-	}
 	
 	override func setUp() {
 		super.setUp()
@@ -57,6 +48,7 @@ class ViewControllerTests: XCTestCase {
 	
 	func test_invalidateClosure() {
 		sut.setupPasscodeView(PassCodeType.confirmPasscode("123456", false))
+		sut.viewDidLoad()
 		sut.passcodeView.invalidClosure?()
 		XCTAssertTrue(sut._isFunctionCalled)
 	}

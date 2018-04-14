@@ -36,9 +36,6 @@ class ViewController: UIViewController, PasscodeDelegate {
 			titleForScreen = "Re-Enter Passcode"
 		}
 		
-		if case PassCodeType.confirmPasscode(_, _) = passcodeType {
-			passcodeView.invalidClosure = doSomething
-		}
 		
 		
 		passcodeView.setupTitleAndDesc(titleForScreen, desc: "This is my description.")
@@ -117,6 +114,9 @@ class ViewController: UIViewController, PasscodeDelegate {
 		
 		
 	
+		if passcodeView != nil, case PassCodeType.confirmPasscode(_, _) = passcodeType {
+			passcodeView.invalidClosure = doSomething
+		}
 		
 		// first-time it's for newPasscode then for confirm passcode
 		if navigationController?.childViewControllers.count == 1 {
